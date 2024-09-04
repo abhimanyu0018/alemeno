@@ -122,7 +122,6 @@ function Dashboard() {
                       Duration: {course.duration} weeks
                     </p>
                     <p className="text-gray-300">Schedule: {course.schedule}</p>
-                    {/* Add more course details as needed */}
                   </div>
                 </div>
               ))}

@@ -9,7 +9,6 @@ import CourseDetails from "./components/CourseDetails";
 import { Signup, Login } from "./components/Signup";
 import Dashboard from "./components/Dashboard";
 import { useSelector } from "react-redux";
-import AddDummyCourses from "./components/dummyData";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
@@ -21,7 +20,6 @@ function App() {
         <Route path="/course/:id" element={<CourseDetails />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dummy" element={<AddDummyCourses />} />
         <Route
           path="/dashboard"
           element={isLoggedIn ? <Dashboard /> : <Navigate to="/" />}
